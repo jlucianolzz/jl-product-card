@@ -40,12 +40,7 @@ export const ProductCard = ({
     maxCount,
     isMaxCountReached,
     reset,
-  } = useProduct({
-    onChange,
-    product,
-    value,
-    initialValues,
-  });
+  } = useProduct({ onChange, product, value, initialValues });
 
   return (
     <Provider value={{ counter, increaseBy, product, maxCount }}>
